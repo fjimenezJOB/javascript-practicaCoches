@@ -27,15 +27,12 @@ var usuario = {
     pedirCoches : function () {
         // Pide la marca, modelo y año de 3 coches que haya tenido el usuario y los introduce en los arrays pertinentes.
         for (var i = 0; i < 3;) {
-            // var coche = prompt('Introduce UNA marca de coche que hayas tenido :');
-            // var modelo = prompt('Introduce el modelo:');
-            // var anyo = prompt('Introduce el año en el que lo tuviste:');
-            var coches = ['Ford', 'Range Rover', 'Audi'];
-            var modelo = ['Fiesta', 'K45', 'A3'];
-            var anyo = [2014, 2016, 2020]
-            this.marca.push(coches[i]);
-            this.modelo.push(modelo[i]);
-            this.anyo.push(anyo[i]);
+            var coche = prompt('Introduce UNA marca de coche que hayas tenido :');
+            var modelo = prompt('Introduce el modelo:');
+            var anyo = prompt('Introduce el año en el que lo tuviste:');
+            this.marca.push(coche);
+            this.modelo.push(modelo);
+            this.anyo.push(anyo);
             i++;
         }
     },
