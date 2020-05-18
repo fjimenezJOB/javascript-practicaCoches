@@ -21,16 +21,18 @@ var usuario = {
     pedirNombre : function (){
         // Pide el nombre al usuario y lo pinta en pantalla para la bienvenida.
         var nombre = prompt('Introduce tu nombre por favor: ');
-        document.write('<h1> Bienvenido: ' + nombre + '</h1>');
+        document.write('<h1> Bienvenido: <strong>' + nombre + '</strong></h1>');
         this.nombre = nombre;
     },
     pedirCoches : function () {
         // Pide la marca, modelo y año de 3 coches que haya tenido el usuario y los introduce en los arrays pertinentes.
         for (var i = 0; i < 3;) {
-            var coche = prompt('Introduce UNA marca de coche que hayas tenido :');
-            var modelo = prompt('Introduce el modelo:');
-            var anyo = prompt('Introduce el año en el que lo tuviste:');
-
+            // var coche = prompt('Introduce UNA marca de coche que hayas tenido :');
+            // var modelo = prompt('Introduce el modelo:');
+            // var anyo = prompt('Introduce el año en el que lo tuviste:');
+            var coches = ['Ford', 'Range Rover', 'Audi'];
+            var modelo = ['Fiesta', 'K45', 'A3'];
+            var anyo = [2014, 2016, 2020]
             this.marca.push(coches[i]);
             this.modelo.push(modelo[i]);
             this.anyo.push(anyo[i]);
@@ -41,7 +43,7 @@ var usuario = {
         // Saca el contenido por pantalla de los arrays previamente rellenados.
         for (var i = 0; i < this.modelo.length; i++) {
             document.write(`
-                <li> Coche ${i +1 } ---- <strong> Marca:</strong> ${this.marca[i]},<strong> Modelo:</strong> ${this.modelo[i]}, <strong>Año:</strong> ${this.anyo[i]}.</li><br/>`);
+                <li> Coche ${i +1 } ---- <strong> Marca:</strong> ${this.marca[i]},<strong> Modelo:</strong> ${this.modelo[i]}, <strong>Año:</strong> ${this.anyo[i]}.</li><br>`);
         }
     }
 }

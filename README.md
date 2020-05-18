@@ -1,2 +1,4 @@
-# Plantilla_Front_2020
-Plantilla para proyectos de FrontEnd = HMLT5 + CSS3 + SASS + JAVASCRIPT
+# Ejercicio de JavaScript
+Practicar: 
+1. Pedir datos al usuario a través de prompt, acceso a variables y creacion de objetos.
+2. Mostar los datos por pantalla y consola.
