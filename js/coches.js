@@ -21,7 +21,7 @@ var usuario = {
     pedirNombre : function (){
         // Pide el nombre al usuario y lo pinta en pantalla para la bienvenida.
         var nombre = prompt('Introduce tu nombre por favor: ');
-        document.write('<h1> Bienvenido: <strong>' + nombre + '</strong></h1>');
+        document.write('<h1 class="bienvenido"> Bienvenido/a: ' + nombre + '</h1>');
         this.nombre = nombre;
     },
     pedirCoches : function () {
@@ -40,7 +40,15 @@ var usuario = {
         // Saca el contenido por pantalla de los arrays previamente rellenados.
         for (var i = 0; i < this.modelo.length; i++) {
             document.write(`
-                <li> Coche ${i +1 } ---- <strong> Marca:</strong> ${this.marca[i]},<strong> Modelo:</strong> ${this.modelo[i]}, <strong>Año:</strong> ${this.anyo[i]}.</li><br>`);
+            <figure class="main-section-coche">
+                <img src="_assets/img/svg/Icon awesome-car-alt.svg" alt="Icono de un coche">
+            </figure>
+            <article class="main-section-info">
+                    <strong> Marca:</strong> ${this.marca[i]}<br><br>
+                    <strong>Modelo:</strong> ${this.modelo[i]}<br><br>
+                    <strong>Año:</strong> ${this.anyo[i]}<br><br>
+            </article>`);
+
         }
     }
 }

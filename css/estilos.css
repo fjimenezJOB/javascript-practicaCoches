@@ -2,22 +2,32 @@ body{
     font-family: Helvetica, Arial, sans-serif;
 }
 
-li{
-    text-decoration:none;
-    margin-bottom: 20px;
+.container {
+    display: grid;
+    grid-template-areas: 
+    "usuario info";
 }
+.main-section-izquierda {
+    grid-area: usuario;
+    display: grid;
+    grid-template-areas: ". . .",
+                        ". foto .";
+}
+
+#logo{
+    grid-area: foto;
+}
+
 
 .main-section-info {
     grid-area: info;
 }
 
+.main-section-coche {
+    grid-area: coche;
+}
+
 .main-section-button {
     grid-area: boton;
     font-size: 30px;
-}
-.main-section {
-    display: grid;
-    grid-template:
-    '. info .';
-    border: 1px solid ;
 }

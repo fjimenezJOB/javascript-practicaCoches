@@ -23,7 +23,7 @@
     <meta property="og:image" content="http://" />
 
     <!-- Twitter Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image" /> 
+    <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="SEAT" />
     <meta name="twitter:description" content="" />
     <meta name="twitter:image" content="http://" />
@@ -37,63 +37,28 @@
     />
 
     <!-- Nuestro Framework de CSS preferido, mi preferido es BULMA -->
-    <link rel="stylesheet" href="node_modules/bulma/css/bulma.min.css" />    
-    
+    <link rel="stylesheet" href="node_modules/bulma/css/bulma.min.css" />
+
     <!-- Nuestro CSS Compilado a través de SASS ó sin compilar solo CSS básico -->
     <link rel="stylesheet" href="css/estilos.css" />
-
-    
   </head>
   <body>
-    <header>
-      <!--
-        *
-        * Bloque HEADER
-        *
-      -->
-           <figure id="logo">
-            <!--
-             *
-             * Bloque LOGO
-             *
-            -->
-                <img src="" alt="">
-           </figure>
-      
-           <nav id="navegacionPrincipal">
-            <!--
-             *
-             * Bloque Links de Navegación Principal
-             *
-            -->
-          </nav>
-      
-    </header>
-
+    <header></header>
     <main>
-      <!--
-        *
-        * Bloque MAIN
-        *
-      -->
-      
-          <section class="main-section">
-            <article class= "main-section-info">
-              <ul>
-                <script type="text/javascript" src="js/coches.js"></script>
-              </ul>
-            </article>
-            <input class = "main-section-button" type="button" value="Reiniciar" onClick="location.reload();">
-          </section>
-      
-          <article>
-            <!--
-             *
-             * Bloque ARTICLE
-             *
-            -->
-          </article>
-      
+      <div class="container">
+      <section class="main-section-izquierda">
+        <figure id="logo">
+          <img src="_assets/img/desktop/@2x/usuario_1@2x.png" alt="Imagen de Usuario" />
+        </figure>
+    </section>
+      <section class="main-section-derecha">
+        <script src="js/coches.js" type="text/javascript"></script>
+        <input class="main-section-button"
+        type="button"
+        value="Reiniciar"
+        onClick="location.reload();"/>
+      </section>
+    </div>
     </main>
 
     <footer>
